@@ -2,9 +2,7 @@
 
 ## Project Overview
 
-This project implements an end-to-end movie data analysis pipeline using the TMDb (The Movie Database) API, Python, and Pandas. The goal is to extract movie data from an external API, clean and preprocess the dataset, compute key performance indicators (KPIs), and generate insights through analysis and visualization.
-
-The project demonstrates practical skills in API usage, data cleaning, exploratory data analysis (EDA), KPI implementation, and data visualization.
+This project builds an end-to-end movie data analysis pipeline using the TMDb API. It involves fetching movie data, cleaning and preprocessing it, computing key performance indicators such as profit and ROI, and visualizing trends to gain insights into movie performance.
 
 ---
 
