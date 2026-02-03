@@ -186,19 +186,110 @@ top_directors(df_kpi)
 Visualizations are used to communicate insights and trends identified
 during the analysis phase.
 
+## 1️⃣ Revenue vs Budget
 """
 
 plot_budget_vs_revenue(df_kpi)
 
+"""###  What the plot shows
+
+* X-axis: **Movie Budget (Million USD)**
+* Y-axis: **Movie Revenue (Million USD)**
+* Each dot represents one movie
+* The line shows the **overall trend**
+
+### Interpretation
+
+* There is a **positive relationship** between budget and revenue.
+* Movies with **higher budgets generally earn higher revenues**.
+* However, the spread of points shows that **high budget does not guarantee high revenue**.
+* Some mid-budget movies perform very well, while some expensive movies underperform.
+
+
+
+> This plot shows that while increasing budget often leads to higher revenue, profitability depends on other factors such as audience reception, genre, and marketing.
+
+2️⃣ Top 10 Genres by Mean ROI
+"""
+
 plot_roi_by_genre(df_kpi)
+
+"""###  What the plot shows
+
+* X-axis: **Movie Genres**
+* Y-axis: **Mean Return on Investment (ROI)**
+* Bars represent average ROI per genre
+
+### Interpretation
+
+* **Fantasy, Comedy, and Romance** have the highest average ROI.
+* Genres like **Action and Science Fiction**, despite high budgets, show **lower average ROI**.
+* This suggests that **lower-cost genres can be more profitable**.
+
+> This visualization highlights that genres with moderate production costs often achieve higher returns compared to big-budget genres.
+
+## 3️⃣ Popularity vs Rating
+"""
 
 plot_popularity_vs_rating(df_kpi)
 
+"""###  What the plot shows
+
+* X-axis: **Popularity score**
+* Y-axis: **Average user rating**
+* Each dot represents one movie
+
+###  Interpretation
+
+* There is **no strong linear relationship** between popularity and rating.
+* Some very popular movies have average ratings.
+* Some less popular movies have high ratings.
+
+
+> Popularity measures visibility and audience reach, while ratings reflect viewer satisfaction. These two metrics do not always move together.
+
+## 4️⃣ Yearly Box Office Revenue Trends
+"""
+
 plot_yearly_revenue(df_kpi)
+
+"""###  What the plot shows
+
+* X-axis: **Release Year**
+* Y-axis: **Total Revenue per Year (Million USD)**
+
+###  Interpretation
+
+* Box office revenue fluctuates significantly across years.
+* Some years show sharp peaks due to **blockbuster releases**.
+* Other years show dips, likely due to fewer high-grossing films.
+
+> This trend shows how the movie industry is influenced by the release timing of major films rather than steady year-to-year growth.
+
+## 5️⃣ Franchise vs Standalone Movie Revenue
+"""
 
 plot_franchise_vs_standalone(df_kpi)
 
-"""## Conclusion
+"""###  What the plot shows
+
+* Comparison of **mean revenue** between:
+
+  * Standalone movies
+  * Franchise movies
+
+###  Interpretation
+
+* Franchise movies generate **slightly higher or comparable average revenue**.
+* However, the difference is not extreme.
+* This indicates that **standalone movies can still be financially successful**.
+
+
+> While franchises benefit from established audiences, standalone films can compete successfully when well executed.
+
+> The visualizations collectively show that movie success is multi-dimensional. Budget, genre, popularity, and franchise status all contribute to performance, but none alone guarantees success.
+
+## Conclusion
 
 This project demonstrates a complete movie data analysis pipeline using
 real-world data from the TMDb API. By combining modular Python scripts,
@@ -208,6 +299,5 @@ into movie performance beyond simple budget and revenue comparisons.
 
 The modular design ensures scalability, maintainability, and alignment
 with professional data analytics and data engineering best practices.
-
 """
 
