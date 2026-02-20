@@ -76,7 +76,7 @@ TMDB_Movie_Data_Analysis/
 
 ---
 
-# 🚀 Key Features
+#  Key Features
 
 ##  1. API Data Extraction
 
@@ -225,7 +225,7 @@ Get your API key from:
 
 ---
 
-# ▶ Running the Pipeline
+#  Running the Pipeline
 
 Execute full ETL workflow:
 
