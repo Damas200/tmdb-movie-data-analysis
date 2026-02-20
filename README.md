@@ -54,7 +54,7 @@ TMDB_Movie_Data_Analysis/
 ├── reports/
 │   ├── kpis/
 │   │   └── kpi_summary.md
-│   └── project_report.md
+│   └─
 │
 ├── logs/
 │   └── pipeline.log
